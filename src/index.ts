@@ -5,5 +5,5 @@ const app = express()
 
 app.use(cors())
 app.use(routes)
-const PORT = process.env.PORT || 3010
+const PORT: string|number = process.env.PORT || 3010
 app.listen(PORT)
